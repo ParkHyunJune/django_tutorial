@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+print("\n === Server를 시작합니다 ===")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -24,8 +25,8 @@ SECRET_KEY = '$(oie3g$8&@pdu=+^+vfe^g%@s(q8nj0i(w^bqy%c30h#b3m@='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+# Not Found
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
