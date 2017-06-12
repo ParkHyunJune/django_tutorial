@@ -8,8 +8,6 @@
 				<li><a href="{% url 'polls:detail' question_id=question.pk %}">
 					{{ question.question_text }}
 				</a></li>
-                <!--<li><a href="/polls/{{ question.id }}/">
-                {{ question.question_text }}</a></li>-->
 			{% endfor %}
 		</ul>
 	{% else %}

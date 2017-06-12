@@ -16,13 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-
-# from polls improt views
 from polls import urls as polls_urls
 
+admin.site.site_title = '마이사이트'
+admin.site.site_header = '마이사이트 관리'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^polls/', include(polls_urls))
-    # url(r'^polls', polls.urls)
+    # url(r'^polls/', include('polls.urls')),
+    url(r'^polls/', include(polls_urls)),
 ]
